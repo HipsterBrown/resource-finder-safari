@@ -1,8 +1,6 @@
-# Package Search for Chrome
+# Package Search for Safari
 
-A simple Chrome extensions for searching Bower for links to packages to use in CodePen and other apps like it.
-
-[Get It Here](https://chrome.google.com/webstore/detail/resource-finder/edlpcnogjoailkfgcnemkleoemcggdji?hl=en-US&gl=US&authuser=1)
+A simple Safari extensions for searching Bower for links to packages to use in CodePen and other apps like it.
 
 Current Features:
 
