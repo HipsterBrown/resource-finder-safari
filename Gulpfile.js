@@ -13,7 +13,7 @@ gulp.task('preprocess:js', function(){
   .transform(babelify)
   .bundle()
   .pipe(source('app.js'))
-  .pipe(gulp.dest('./app/src/browser_action'));
+  .pipe(gulp.dest('./resource-finder.safariextension'));
 });
 
 gulp.task('preprocess:css', function(){
@@ -22,7 +22,7 @@ gulp.task('preprocess:css', function(){
 	  includePaths: require('node-bourbon').includePaths
 	}))
         .pipe(autoprefix())
-	.pipe(gulp.dest('./app/src/browser_action'));
+	.pipe(gulp.dest('./resource-finder.safariextension'));
 });
 
 gulp.task('watch', function(){

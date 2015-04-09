@@ -1,6 +1,6 @@
 {
-  "name": "resource-finder",
-  "version": "0.1.0",
+  "name": "resource-finder-safari",
+  "version": "0.5.0",
   "description": "A browser extension for searching Bower for package urls to use with CodePen",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
