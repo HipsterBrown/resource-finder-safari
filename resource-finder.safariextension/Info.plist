@@ -33,17 +33,17 @@
 		<array>
 			<dict>
 				<key>Identifier</key>
-				<string>ResourceFinderButton</string>
+				<string>ButtonDawg</string>
 				<key>Image</key>
-				<string>icons/Icon16.png</string>
+				<string>icons/Icon 16 Safari Copy.png</string>
 				<key>Label</key>
-				<string>Resource Finder</string>
+				<string>Resource Finder34</string>
 				<key>Palette Label</key>
-				<string>Resource Finder</string>
+				<string>Resource Finder34</string>
 				<key>Popover</key>
 				<string>ResourceFinderPop</string>
 				<key>Tool Tip</key>
-				<string>Resource Finder</string>
+				<string>Resource Finder34</string>
 			</dict>
 		</array>
 	</dict>

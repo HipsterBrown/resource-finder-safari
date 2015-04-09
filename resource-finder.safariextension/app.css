@@ -6,8 +6,7 @@ body {
   background: #37A3F7;
   color: #4d4d4d;
   font-family: "Verdana", "Geneva", sans-serif;
-  padding: 0 1em;
-  width: 30em; }
+  padding: 0 1em; }
 
 .form-row {
   display: -webkit-box;

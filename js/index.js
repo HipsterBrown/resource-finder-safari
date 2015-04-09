@@ -162,3 +162,5 @@ let App = React.createClass({
 });
 
 React.render(React.createElement(App), document.getElementById('app'));
+
+safari.extension.toolbarItems[0].image = `${safari.extension.baseURI}icons/Icon 16 Safari.pdf`;
