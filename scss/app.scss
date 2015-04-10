@@ -11,6 +11,7 @@ body {
   background: $blue-primary;
   color: lighten(black, 30%);
   font-family: $verdana;
+  font-size: 10px;
   padding: 0 1em;
 }
 
@@ -29,27 +30,27 @@ body {
 
 .awesomplete {
   position: relative;
-  width: 80%;
+  flex-grow: 4;
 
   > ul {
-	background: white;
-  box-shadow: 0px 2px 4px rgba(darken($blue-primary, 20%), 0.6);
-	list-style: none;
-	padding: 0em;
-	position: absolute;
-	top: 70%;
-	width: 100%;
-	z-index: 10;
+    background: white;
+    box-shadow: 0px 2px 4px rgba(darken($blue-primary, 20%), 0.6);
+    list-style: none;
+    padding: 0em;
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    z-index: 10;
 
-	li {
-		color: lighten(black, 30%);
-		padding: 1em;
+    li {
+      color: lighten(black, 30%);
+      padding: 1em;
 
-		&:hover, &[aria-selected=true] {
-			background: darken($blue-primary, 10%);
-			color: white;
-	  }
-  }
+      &:hover, &[aria-selected=true] {
+        background: darken($blue-primary, 10%);
+        color: white;
+      }
+    }
   }
 }
 
@@ -58,27 +59,26 @@ body {
 }
 
 .error-message {
-	background: adjust-color(red, $red: 15);
-	color: white;
-	padding: 0.5em 1em;
+  background: adjust-color(red, $red: 15);
+  color: white;
+  padding: 0.5em 1em;
 }
 
 .search-input {
-  animation: fly-in 0.5s $ease-out-quart forwards 1s;
   -webkit-appearance: none;
+  animation: fly-in 0.5s $ease-out-quart forwards 1s;
   border: 0px;
   border-radius: 0px;
   box-shadow: none;
   color: lighten(black, 30%);
   font-size: 1.2em;
-  padding: 1em 0.5em;
+  padding: 1em 0em;
   transform: translateX(-120%);
   width: 100%;
 }
 
 .search-submit {
-  animation: fly-in 0.5s $ease-out-quart forwards 1s;
-  appearance: none;
+  -webkit-appearance: none;
   background: white;
   border: 0px;
   border-radius: 0px;
@@ -88,14 +88,13 @@ body {
   outline: none;
   margin-left: 5px;
   padding: 1em;
-  transform: translateX(150%);
 
   &:hover {
-	cursor: pointer;
+    cursor: pointer;
   }
 
   &:active {
-	transform: scale(0.9);
+    transform: scale(0.9);
   }
 }
 
@@ -167,6 +166,12 @@ body {
 
 .copy-path {
   fill: $blue-primary;
+}
+
+.animate-done {
+  animation: none;
+  opacity: 1;
+  transform: none;
 }
 
 @keyframes fade-in {

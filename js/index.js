@@ -29,7 +29,14 @@ let App = React.createClass({
 
     if( cache ) {
       cache.forEach(self.parseBower);
+      
+      safari.extension.popovers[0].height = cache.length < 4 ? 100 + cache.length * 75 : 100 + 3.5 * 75;
+    } else {
+      safari.extension.popovers[0].height = 110;
     }
+
+    safari.extension.toolbarItems[0].image = `${safari.extension.baseURI}icons/Icon 16 Safari.pdf`;
+
   },
 
   parseBower(json) {
@@ -113,6 +120,7 @@ let App = React.createClass({
       self.setState({
         error: D.h3({ className: "error-message" }, "I Think You Forgot Something...")
       });
+      safari.extension.popovers[0].height = safari.extension.popovers[0].height < 120 ? 140 : safari.extension.popovers[0].height;
       return false;
     }
 
@@ -141,6 +149,8 @@ let App = React.createClass({
         });
         finalArr.forEach(self.parseBower);
         self.storeResults(finalArr);
+
+        safari.extension.popovers[0].height = finalArr.length < 4 ? 100 + finalArr.length * 75 : 100 + 3.5 * 75;
       }); 
     });
   },
@@ -162,5 +172,3 @@ let App = React.createClass({
 });
 
 React.render(React.createElement(App), document.getElementById('app'));
-
-safari.extension.toolbarItems[0].image = `${safari.extension.baseURI}icons/Icon 16 Safari.pdf`;

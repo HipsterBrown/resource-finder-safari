@@ -6,6 +6,7 @@ body {
   background: #37A3F7;
   color: #4d4d4d;
   font-family: "Verdana", "Geneva", sans-serif;
+  font-size: 10px;
   padding: 0 1em; }
 
 .form-row {
@@ -23,7 +24,10 @@ body {
 
 .awesomplete {
   position: relative;
-  width: 80%; }
+  -webkit-box-flex: 4;
+  -webkit-flex-grow: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4; }
   .awesomplete > ul {
     background: white;
     box-shadow: 0px 2px 4px rgba(8, 112, 192, 0.6);
@@ -49,24 +53,22 @@ body {
   padding: 0.5em 1em; }
 
 .search-input {
+  -webkit-appearance: none;
   -webkit-animation: fly-in 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards 1s;
           animation: fly-in 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards 1s;
-  -webkit-appearance: none;
   border: 0px;
   border-radius: 0px;
   box-shadow: none;
   color: #4d4d4d;
   font-size: 1.2em;
-  padding: 1em 0.5em;
+  padding: 1em 0em;
   -webkit-transform: translateX(-120%);
       -ms-transform: translateX(-120%);
           transform: translateX(-120%);
   width: 100%; }
 
 .search-submit {
-  -webkit-animation: fly-in 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards 1s;
-          animation: fly-in 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards 1s;
-  appearance: none;
+  -webkit-appearance: none;
   background: white;
   border: 0px;
   border-radius: 0px;
@@ -75,10 +77,7 @@ body {
   font-weight: 600;
   outline: none;
   margin-left: 5px;
-  padding: 1em;
-  -webkit-transform: translateX(150%);
-      -ms-transform: translateX(150%);
-          transform: translateX(150%); }
+  padding: 1em; }
   .search-submit:hover {
     cursor: pointer; }
   .search-submit:active {
@@ -143,6 +142,14 @@ body {
 
 .copy-path {
   fill: #37A3F7; }
+
+.animate-done {
+  -webkit-animation: none;
+          animation: none;
+  opacity: 1;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none; }
 
 @-webkit-keyframes fade-in {
   to {
